@@ -3,10 +3,6 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=learner-402&label=Profile%20views&color=0e75b6&style=flat" alt="learner-402" /> </p>
 
-<---! <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=learner-402" alt="learner-402" /></a> </p>
-
-<p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p> --->
-
 - 🔭 I’m currently working on [Student Management System](https://github.com/learner-402/WebApplication2)
 
 - 🌱 I’m currently learning **DotNet**
