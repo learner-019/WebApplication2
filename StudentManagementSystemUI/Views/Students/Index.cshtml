@@ -1,12 +1,34 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model IEnumerable<StudentManagementSystemUI.Models.DTO.StudentDto>
 @{
 }
-<h1> Student Information <a class="btn mybtn">ADD Student</a></h1>
+<h1>
+    Student Information <a class="mybtn" style="float: right" asp-controller="Students" asp-action="Add">ADD Student</a>
+</h1>
 <br />
 
-@if (ViewBag.Response is not null)
-{
-    <p>@ViewBag.Response</p>
-}
+<table class="table table-bordered mytable">
+    <thead>
+        <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+            <th>Student Email</th>
+            <th>Department</th>
+            <th>Icon</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var department in Model)
+        {
+            <tr>
+                <td>@department.Id</td>
+                <td>@department.FirstName</td>
+                <td>@department.Email</td>
+                <td>@department.DepartmentName</td>
+                <td>
+                    <a style="float: left" asp-controller="Students" asp-action="Edit" asp-route-id="@department.Id" class="mybtn">Edit | Remove</a>
+               </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

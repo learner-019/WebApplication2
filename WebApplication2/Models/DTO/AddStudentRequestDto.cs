@@ -8,8 +8,8 @@ namespace WebApplication2.Models.DTO
         public string LastName { get; set; }
         public string Contact { get; set; }
         public string Email { get; set; }
-        public DateTime CreatedOn { get; set; }
-        public DateTime ModifiedOn { get; set; }
+        public DateTime CreatedOn { get; set; } = DateTime.Now;
+        public DateTime ModifiedOn { get; set; } = DateTime.Now;
         public string DepartmentName { get; set; }
 
     }

@@ -1,0 +1,44 @@
+﻿@model StudentManagementSystemUI.Models.DTO.StudentDto
+@{
+}
+
+<h1>Edit Student</h1>
+
+@if(Model is not null)
+{
+    <form method="post">
+        <div class="mt-2">
+            <label class="form-label">ID</label>
+            <input type="text" class="form-control" asp-for="Id" readonly />
+        </div>
+        <div class="mt-2">
+            <label class="form-label">FirstName</label>
+            <input type="text" class="form-control" asp-for="FirstName" />
+        </div>
+        <div class="mt-2">
+            <label class="form-label">LastName</label>
+            <input type="text" class="form-control" asp-for="LastName" />
+        </div>
+        <div class="mt-2">
+            <label class="form-label">Contact</label>
+            <input type="text" class="form-control" asp-for="Contact" />
+        </div>
+        <div class="mt-2">
+            <label class="form-label">Email</label>
+            <input type="text" class="form-control" asp-for="Email" />
+        </div>
+        <div class="mt-2">
+            <label class="form-label">Department Name</label>
+            <input type="text" class="form-control" asp-for="DepartmentName" />
+        </div>
+        <div class="mt-2">
+            <label class="form-label">ModifiedOn</label>
+            <input type="text" class="form-control" asp-for="ModifiedOn" readonly/>
+        </div>
+        <div class="mt-2">
+            <button type="submit" class="btn btn-primary"> Update </button>
+            <button type="submit" class="btn btn-danger" asp-controller="Students" asp-action="Delete"> Delete </button>
+
+        </div>
+    </form>
+}

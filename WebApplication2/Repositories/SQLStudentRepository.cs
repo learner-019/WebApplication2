@@ -55,7 +55,9 @@ namespace WebApplication2.Repositories
             existingStudent.Email = student.Email;
             existingStudent.Contact = student.Contact;
             existingStudent.ModifiedOn = student.ModifiedOn;
-            
+            existingStudent.DepartmentName = student.DepartmentName;
+
+
             await dbContext.SaveChangesAsync();
             return existingStudent;
         }
